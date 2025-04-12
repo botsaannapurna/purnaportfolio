@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 36px;
+      font-weight: bold;
+      color: #00f7a5;
+    }
+
+    .portfolio-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: #1e1e2f;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 255, 180, 0.3);
+    }
+
+    .project-title {
+      font-size: 20px;
+      color: #00ffbf;
+      margin-bottom: 10px;
+    }
+
+    .project-desc {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      .section-title {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="portfolio">
+    <h3 class="section-title">Projects and Experiences</h3>
+    <div class="portfolio-container">
+      
+      <div class="project-card">
+        <h4 class="project-title">📚 Read Ease – Library Management System</h4>
+        <p class="project-desc">
+          Designed and developed a user-friendly library system with features like book inventory and student management using HTML, CSS, JavaScript, and MySQL.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h4 class="project-title">🌦️ Interactive Weather Forecasting Website</h4>
+        <p class="project-desc">
+          Built a responsive web app using HTML, CSS, JS, PHP, and MySQL. Provides real-time forecasts using weather APIs and location-based UI.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h4 class="project-title">📈 Stock Market Prediction (ML Mini Project)</h4>
+        <p class="project-desc">
+          Developed a model using SVM to predict stock trends. Employed Python, pandas, and sklearn for data preprocessing and model evaluation.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h4 class="project-title">🛒 E-commerce Platform (Edumoon Internship)</h4>
+        <p class="project-desc">
+          Created a full-fledged MERN stack e-commerce app during internship with product listings, authentication, and dynamic cart system.
+        </p>
+      </div>
+      <div class="project-card">
+        <h4 class="project-title">🧩 Full Stack Web App with Bootstrap & EJS</h4>
+        <p class="project-desc">
+          Developed a responsive full stack web application using EJS templating for dynamic rendering, and Express.js with Node.js and MongoDB for backend. Integrated GitHub for version control and deployed on Render.com for live access.
+        </p>
+      </div>
+      
+
+    </div>
+  </section>
+</body>
+</html>

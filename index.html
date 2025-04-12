@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botsa Annapurna | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f1b;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    header {
+      width: 100%;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 1.5rem; font-weight: bold; color: #00ff88; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #ccc;
+      font-weight: bold;
+    }
+    nav ul li a:hover, nav ul li a.active { color: #00ff88; }
+    section {
+      padding: 80px 50px;
+    }
+    .main-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .text-content {
+      max-width: 50%;
+    }
+    .text-content h1 { font-size: 3rem; }
+    .text-content h2 {
+      color: #ccc;
+      margin: 20px 0;
+    }
+    .text-content h2 span { color: #00ff88; }
+    .text-content p { color: #aaa; line-height: 1.6; }
+    .btn-download {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 25px;
+      background: #00ff88;
+      color: #000;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+    .social-icons {
+      margin-top: 30px;
+    }
+    .social-icons a {
+      margin-right: 15px;
+      color: #00ff88;
+      font-size: 1.5rem;
+    }
+    .profile-img {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #00ff88;
+    }
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h3.section-title { color: #00ff88; margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      .main-section { flex-direction: column; text-align: center; }
+      .text-content, .profile-img { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Portfolio</div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main-section">
+    <div class="text-content">
+      <h1>Botsa Annapurna</h1>
+      <h2>I'm a <span>Full Stack Developer</span></h2>
+      <p>B.Tech CSE (AIML) student passionate about creating smart web solutions with the MERN stack and Machine Learning integration.</p>
+      <a class="btn-download" href="resume.pdf" download="Botsa_Annapurna_Resume.pdf">Download Resume</a>
+      <div class="social-icons">
+        <a href="https://github.com/botsaannapurna" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/annapurna-botsa" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://leetcode.com/Annapurna22" target="_blank"><i class="fa-solid fa-code"></i></a>
+        <a href="https://www.hackerrank.com/botsaannapurna_1" target="_blank"><i class="fab fa-hackerrank"></i></a>
+      </div>
+      
+    </div>
+    
+    
+  </section>
+    
+</body>
+</html>

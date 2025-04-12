@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Botsa Annapurna</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #1e1f2f, #3e4b5b);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #00ffae;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #00ffae;
+    }
+
+    #about {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+    }
+
+    .about-card {
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .about-card h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #00ffae;
+    }
+
+    .about-card p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #f0f0f0;
+      text-align: justify;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Annapurna</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="about-card">
+      <h3>About Me</h3>
+      <p>
+        I'm an enthusiastic aspiring Cloud Solutions Architect, passionate about leveraging technology to solve real-world problems.
+        As a fresh graduate, I am eager to contribute to a forward-thinking organization that values innovation and growth.
+        I seek opportunities that allow me to enhance my technical skills while aligning with the organization’s objectives.
+        With a strong theoretical foundation and a willingness to learn, I aim to transform ideas into impactful solutions and continuously grow in a dynamic professional environment.
+      </p>
+    </div>
+  </section>
+</body>
+</html>
